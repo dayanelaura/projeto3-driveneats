@@ -1,0 +1,14 @@
+/*font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+.topo {
+    width: 1366px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;               
+    display: flex;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+}
