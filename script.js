@@ -1,3 +1,3 @@
 
-    const elemento = document.querySelector(".topo");
-	alert(elemento.innerHTML);
+    // const elemento = document.querySelector(".topo");
+	// alert(elemento.innerHTML);
