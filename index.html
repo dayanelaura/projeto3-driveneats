@@ -13,89 +13,143 @@
 </head>
 
 <body>
+
     <div class="topo">
         <h5>DrivenEats</h5>
         <h2>Sua comida em 6 minutos</h2>
     </div>
+
     <div class="cardapio">
+        
         <h4>Primeiro, seu prato</h4>
         <div class="pratos">
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'pratos');">
+                <img src="./ArquivosUteis/lasanha1.jpg" />
                 <h1>Lasanha garfield</h1>
                 <h2>Um pouco de batata, um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$14,90</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
             </div>
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'pratos');">
+                <img src="./ArquivosUteis/espinaf.jpg" />
                 <h1>Espinafre popeye</h1>
                 <h2>Um pouco de batata, um pouco de salada</h2>
-                <h3>R$ 11,90</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$ 11,90</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>                
             </div>
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
-                <h1>Macarrão</h1>
+            <div class="box" onclick="selecionar(this, 'pratos');">
+                <img src="./ArquivosUteis/fettuci.jpg" />
+                <h1>Fettuccine alfredo</h1>
                 <h2>Um pouco de batata, um pouco de salada</h2>
-                <h3>R$ 17,50</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$ 17,50</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
+            </div>
+            <div class="box" onclick="selecionar(this, 'pratos');">
+                <img src="./ArquivosUteis/pratoexecutivo.jpg" />
+                <h1>Prato executivo</h1>
+                <h2>Feijão verde, arroz, paçoca e batata frita</h2>
+                <div class="selecionado">
+                    <h3>R$ 15,70</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
             </div>
         </div>
+
         <h4>Agora, sua bebida</h4>
         <div class="bebidas">
-            <div class="box">
-                <img src="./ArquivosUteis/sanduíche.jpg" />
+            <div class="box" onclick="selecionar(this, 'bebidas');">
+                <img src="./ArquivosUteis/moscow.jpg" />
                 <h1>Moscow mule </h1>
                 <h2>Limão, xarope de gengibre e vodka</h2>
-                <h3>R$ 13,00</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$ 13,00</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>            
             </div>
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'bebidas');">
+                <img src="./ArquivosUteis/cafe.jpg" />
                 <h1>Café gregório</h1>
                 <h2>Café com chocolate ao leite e canela</h2>
-                <h3>R$ 9,00</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$ 9,00</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
             </div>
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'bebidas');">
+                <img src="./ArquivosUteis/suco2.jpg" />
                 <h1>Suco</h1>
                 <h2>Todos os sabores</h2>
-                <h3>R$ 6,50</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$ 6,50</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>                    
+                </div>
+            </div>
+            <div class="box" onclick="selecionar(this, 'bebidas');">
+                <img src="./ArquivosUteis/chamategelado.jpg" />
+                <h1>Chá mate</h1>
+                <h2>300ml</h2>
+                <div class="selecionado">
+                    <h3>R$ 6,00</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>                    
+                </div>
             </div>
         </div>
+
         <h4>Por fim, sua sobremesa</h4>
         <div class="sobremesas">
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'sobremesas');">
+                <img src="./ArquivosUteis/petitgateau.jpg" />
                 <h1>Petit gateau</h1>
-                <h2>Um pouco de batata, um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <h2>Sorvete, bolo e calda <br/> de chocolate</h2>
+                <div class="selecionado">
+                    <h3>R$ 14,90</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
             </div>
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'sobremesas');">
+                <img src="./ArquivosUteis/brownie.jpg" />
                 <h1>Brownie</h1>
                 <h2>Um pouco de batata, um pouco de salada</h2>
-                <h3>R$ 8,00</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <div class="selecionado">
+                    <h3>R$ 8,00</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
             </div>
-            <div class="box">
-                <img src="./ArquivosUteis/sanduiche2.jpg" />
+            <div class="box" onclick="selecionar(this, 'sobremesas');">
+                <img src="./ArquivosUteis/frozeniogurte.jpg" />
                 <h1>Frozen iogurte</h1>
-                <h2>Um pouco de batata, um pouco de salada</h2>
-                <h3>R$ 12,00</h3>
-                <!-- <ion-icon name="checkmark-circle"></ion-icon> -->
+                <h2>Iogurte natural <br/> acompanha 3 frutas</h2>
+                <div class="selecionado">
+                    <h3>R$ 12,00</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
+            </div>
+            <div class="box" onclick="selecionar(this, 'sobremesas');">
+                <img src="./ArquivosUteis/palhaitaliana.jpg" />
+                <h1>Palha italiana</h1>
+                <h2>Tradicional, oreo ou maracujá</h2>
+                <div class="selecionado">
+                    <h3>R$ 6,00</h3>
+                    <ion-icon name="checkmark-circle" class="icone"></ion-icon>
+                </div>
             </div>
         </div>
+
     </div>
+
     <div class="ground">
-        <button name="button">Selecione os 3 itens para selecionar o pedido</button>
-        <!-- <button name="button">Fechar pedido</button> -->
+        <button>Selecione os 3 itens <br/> para fechar o pedido</button>
     </div>
-   
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
     <script src="script.js"></script>
 </body>
 
