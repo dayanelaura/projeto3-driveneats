@@ -1,16 +1,20 @@
+body {
+    margin: 92px auto;
+}
+
 .topo {
     width: 414px;
     height: 92px;
     background-color: #CF2B2B;            
     display: flex;
     position: fixed;
+    top: 0;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.topo h1 {
-    width: 248px;
-    height: 44px;
+.topo h5 {
     padding-top: 25px;
     padding-left: 21px;
     font-family: 'Righteous', cursive;
@@ -18,8 +22,6 @@
     color: #FFFFFF;
 }
 .topo h2 {
-    width: 226px;
-    height: 17px;
     padding-left: 21px;
     padding-bottom: 18px;
     padding-top: 5px;
@@ -34,28 +36,28 @@
     padding-bottom: 16px;
     box-sizing: border-box;
 }
-.categoria1 {
+.cardapio h4 {
     font-family: 'Righteous', cursive;
     font-size: 26px;
     color: #333333;
     height: 25px;
     padding-left: 19px;
-    padding-top: 123px;
+    padding-top: 27px;
+}
+.cardapio h4:nth-child(1){ 
+    padding-left: 19px;
+    padding-top: 31px;
+    display: flex;
 }
 .pratos {
-    background-color: #E5E5E5;
-    width: auto;
-    height: 216px;
     padding-left: 19px;
-    padding-top: 17px;    
+    padding-top: 17px;
     display: flex;
     overflow-x: scroll;
-    position: relative;
     padding-right: 16px;
     box-sizing: border-box;
 }
-.box1 {
-    position: absolute;
+.box {
     width: 172px;
     height: 216px;
     display: flex;
@@ -66,31 +68,7 @@
     margin-right: 16px;
     box-sizing: border-box;
 }
-.box2 {
-    position: absolute;
-    width: 172px;
-    height: 216px;
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    margin-left: 188px;
-    margin-right: 16px;
-    box-sizing: border-box;
-}
-.box3 {
-    position: absolute;
-    width: 172px;
-    height: 216px;
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    margin-left: 376px;
-    margin-right: 16px;
-}
+
 img {
     width: 144px;
     height: 87px;
@@ -99,7 +77,9 @@ img {
     margin-right: 14px;
     border-radius: 4px;
 }
+
 h1 {
+    display: block;
     height: 23px;
     padding-left: 15px;
     padding-top: 8px;
@@ -109,8 +89,8 @@ h1 {
     color: #333333;
 }
 h2 {
-    width: auto;
-    height: auto;
+    display: block;
+    height: 50px;
     padding-left: 14px;
     padding-top: 4px;
     font-family: 'Roboto', sans-serif;
@@ -129,64 +109,47 @@ h3 {
     line-height: 19px;
     color: #333333;
 }
-.categoria23 {
-    font-family: 'Righteous', cursive;
-    font-size: 26px;
-    color: #333333;
-    height: 25px;
-    padding-left: 19px;
-    padding-top: 27px;
-}
+
 .bebidas {
-    background-color: #E5E5E5;
-    width: auto;
-    height: 216px;
     padding-left: 19px;
     padding-top: 17px;    
     display: flex;
     overflow-x: scroll;
-    position: relative;
     padding-right: 16px;
     box-sizing: border-box;
 }
 .sobremesas {
-    background-color: #E5E5E5;
-    width: auto;
-    height: 216px;
     padding-left: 19px;
     padding-top: 17px;    
     display: flex;
     overflow-x: scroll;
-    position: relative;
     padding-right: 16px;
     box-sizing: border-box;
 }
 .ground {
     width: 414px;
     height: 92px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    background: #aa4c4c;
+    background: #FFFFFF;
     display: flex;
     position: fixed;
-    z-index: 1;
+    bottom: 0;
 }
-/* button{
+button{
+    background-color: #CBCBCB;
     width: 364px;
     height: 61px;
     border-radius: 50px;
     font-family: 'Roboto';
     font-size: 20px;
-    line-height: 23px;
     text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-} */
+    margin-left: 25px;
+    margin-top:15px;
+}
 /*
 button.disabled {
-    background-color: green;
+    background-color: #CBCBCB;
 }
 button.enabled {
     background-color: gray;
